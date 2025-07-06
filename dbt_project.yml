@@ -40,14 +40,10 @@ models:
     example:
       materialized: view
     
-    mart:
-      +materialized: table
-      core:
+    jaffle_shop:
+
+      mart:
         +materialized: table
       
-    staging:
-      +materialized: view
-      jaffle_shop:
-        +materialized: view
-      stripe:
+      staging:
         +materialized: view
