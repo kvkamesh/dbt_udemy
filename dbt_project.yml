@@ -42,6 +42,12 @@ models:
     
     mart:
       +materialized: table
+      core:
+        +materialized: table
       
     staging:
       +materialized: view
+      jaffle_shop:
+        +materialized: view
+      stripe:
+        +materialized: view

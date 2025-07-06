@@ -1,6 +1,6 @@
 select
     ID,
-    ORDERID,
+    orderid ORDER_ID,
     PAYMENTMETHOD,
     STATUS,
     (AMOUNT/100) as amount, --converting the amount in cents to dollers
