@@ -6,4 +6,4 @@ select
     (AMOUNT/100) as amount, --converting the amount in cents to dollers
     CREATED as created_At
 from
-    RAW.STRIPE.PAYMENT
+    {{source('stripe','PAYMENT')}}
