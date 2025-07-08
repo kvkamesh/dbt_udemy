@@ -16,3 +16,8 @@ models:
         tests:
           - accepted_values:
               values: ['returned','completed','shipped','return_pending','placed']
+
+# commands to conduct the test
+# dbt test -- select test_type = generic
+# dbt test -- select test_type = singular
+# dbt test -- select source:jaffle_shop
